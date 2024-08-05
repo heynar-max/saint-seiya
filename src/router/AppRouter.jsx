@@ -1,21 +1,18 @@
-import {  HashRouter, Navigate, Route, Routes } from "react-router-dom"
+import {  Route, Routes } from "react-router-dom"
 import { Navbar } from "../IU/components/Navbar"
-import { HomePage } from "../saintseiya/page/HomePage"
-import { GoldsaintPage } from "../saintseiya/page/GoldsaintPage"
-import { BronzesaintPage } from "../saintseiya/page/BronzesaintPage"
+import { LoginPage } from "../auth/pages/LoginPage"
+import { SaintSeiyaRoutes } from "../saintseiya/routes/SaintSeiyaRoutes"
 
 const AppRouter = () => {
     return (
-        <HashRouter>
+        <>
             <Navbar/>
                 <Routes>
-                    <Route path="/" element={<HomePage/>}/>
-                    <Route path="/bronze" element={<BronzesaintPage/>}/>
-                    <Route path="/gold" element={<GoldsaintPage/>}/>
-
-                    <Route path="/*" element={<Navigate to="/"/>}/>
+                    <Route path="login" element={<LoginPage/>}/>
+                    
+                    <Route path="/*" element={<SaintSeiyaRoutes/>}/>
                 </Routes>
-        </HashRouter>
+        </>
     )
 }
 
