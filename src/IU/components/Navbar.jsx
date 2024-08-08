@@ -46,7 +46,7 @@ export const Navbar = () => {
                         className="onlogout_botton"
                         onClick={ onLogout }
                     >
-                        Iniciar sección
+                    Login
                     </button>
                 </div>
         </nav>

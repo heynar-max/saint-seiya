@@ -46,8 +46,11 @@
     background: var(--sexto-color);  /* son los bordes */
 }
 
-nav-item nav-link btn{
-    background-color: var(--cuarto-color);
+
+
+.nav_link{
+    text-decoration: none;
+    color: var(--tercer-color);
 }
 
 .onlogout_botton{
