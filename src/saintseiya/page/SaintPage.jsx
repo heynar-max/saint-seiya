@@ -1,7 +1,8 @@
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import {  useNavigate, useParams } from "react-router-dom";
 import { getSaintById } from "../helpers/getSaintById";
 import '../../style/SaintPage.css'
 import { FaChevronLeft } from "react-icons/fa";
+import { NotFound } from "./NotFound";
 
 
 export const SaintPage = () => {
@@ -18,8 +19,7 @@ export const SaintPage = () => {
     }
 
     if ( !saint ) {
-        // return <>404 - not found</> si quiere la pantalla 404
-        return <Navigate to="/" />
+        return <NotFound />
     }
 
     return (
