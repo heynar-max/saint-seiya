@@ -3,7 +3,7 @@
     border-bottom-style: inset;
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 70px;
     margin: auto;
     position: sticky;
     align-items: center;
@@ -17,15 +17,19 @@
 }
 
 
-.navbar-navigation{
+.center_menu{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+.sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nav-item{
     display: flex;
-    margin-right: 2rem;
     text-decoration: none;
     font-size: 1.2rem;
     list-style: none;
@@ -54,7 +58,6 @@
 }
 
 .onlogout_botton{
-    background-color: var(--sexto-color); /* Color de fondo */
     color: var(--primer-color); /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     text-align: center; /* Alineación del texto */
@@ -68,5 +71,16 @@
     font-weight: bold; /* fuente mas gruesa */
 }
 .onlogout_botton:hover{
+    background-color: var(--sexto-color); /* Color de fondo */
     color: var(--cuarto-color); /* Color del texto */
+}
+
+@media (max-width: 900px) {
+    .center_menu{
+        display: none;
+    }
+    .navbar_logo{
+        width: 120px;
+    }
+    
 }
