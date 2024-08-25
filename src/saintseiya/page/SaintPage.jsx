@@ -2,7 +2,7 @@ import {  useNavigate, useParams } from "react-router-dom";
 import { getSaintById } from "../helpers/getSaintById";
 import '../../style/SaintPage.css'
 import { FaChevronLeft } from "react-icons/fa";
-import { NotFound } from "./NotFound";
+import { NotFound } from "../../IU/components/NotFound";
 
 
 export const SaintPage = () => {
