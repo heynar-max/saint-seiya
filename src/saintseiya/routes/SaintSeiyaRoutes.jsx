@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { BronzesaintPage, GoldsaintPage, HomePage, NotFound, SaintPage, SearchPage } from "../page"
-import { Navbar } from "../../IU/components/Navbar"
+import { Navbar } from "../../IU/components"
+import { Sidebar } from "../../IU/components"
 
 
 
@@ -8,6 +9,7 @@ export const SaintSeiyaRoutes = () => {
     return (
         <>
         <Navbar/>
+        <Sidebar/>
             <div className="router_container">
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
