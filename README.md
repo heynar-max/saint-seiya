@@ -34,6 +34,8 @@ Enrutamiento a una aplicación web de React\
 se usa react-icons para los iconos de la aplicación\
 `npm install react-icons`
 
+gestor de estado ZUSTAND\
+`npm install zustand`
 
 ## Colores de la aplicación
 Fondo de la pantalla : `#ffffff`\

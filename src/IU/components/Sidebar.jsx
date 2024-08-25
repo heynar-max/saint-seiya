@@ -1,23 +1,40 @@
 import { IoCloseOutline, IoHomeOutline, IoLogInOutline, IoLogOutOutline, IoMedalOutline, IoSearchOutline } from 'react-icons/io5'
 import '../../style/sidebar.css'
 import { Link } from 'react-router-dom'
+import { useUIStore } from '../../store'
 
 export const Sidebar = () => {
+
+    const isSideMenuOpen = useUIStore ( state => state.isSideMenuOpen);
+    const isCloseMenu = useUIStore ( state => state.closeSideMenu);
+
+
     return (
         <div>
             {/* background black  */}
-            <div className="sidebar_black"/>
+            {
+                isSideMenuOpen &&(
+                    <div 
+                    className="sidebar_black"/>
+                )
+            }
 
             
             {/* blur  */}
-            <div className='sidebar_blur'/>
+            {
+                isSideMenuOpen &&(
+                    <div 
+                    onClick={ isCloseMenu }
+                    className='sidebar_blur'/>
+                )
+            }
 
             {/* sidermenu  */}
-            <nav className='sidebar_nav'>
+            <nav className={`sidebar_nav ${!isSideMenuOpen ? 'translate-x-full' : ''}`}>
 
                 <IoCloseOutline
                     className='sidebar_nav_icon'
-                    onClick={ () => console.log('click')}
+                    onClick={ () => isCloseMenu()}
                     />
                 <div className='sidebar_search'>
                     <Link to='/search'>

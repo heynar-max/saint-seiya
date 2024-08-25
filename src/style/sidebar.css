@@ -32,6 +32,11 @@
     transform: matrix();
     transition: all;
     animation-duration: 300;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar_nav.translate-x-full {
+    transform: translateX(100%);
 }
 
 .sidebar_nav_icon{
