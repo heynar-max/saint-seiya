@@ -361,3 +361,12 @@ button:focus+.design-container {
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+@media ( max-width: 480px){
+  .flip-card-container {
+    width: 240px;
+    height: 380px;
+    margin: 0px;
+  
+    perspective: 1000px;
+  }
+}

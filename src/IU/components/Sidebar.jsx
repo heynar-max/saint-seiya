@@ -47,31 +47,36 @@ export const Sidebar = () => {
                 <div className="sidebar_menu">
                     <Link 
                     className="siderbar_menu_link"
-                    to='/'>
+                    to='/'
+                    onClick={ isCloseMenu }>
                         <IoHomeOutline className="ico_menu"/>
                         <span className='sidebar_span'>Inicio</span>
                     </Link>
                     <Link 
                     className="siderbar_menu_link"
-                    to='/bronze'>
+                    to='/bronze'
+                    onClick={ isCloseMenu }>
                         <IoMedalOutline className="ico_menu"/>
                         <span className='sidebar_span'>Bronze</span>
                     </Link>
                     <Link 
                     className="siderbar_menu_link"
-                    to='/gold'>
+                    to='/gold'
+                    onClick={ isCloseMenu }>
                         <IoMedalOutline className="ico_menu"/>
                         <span className='sidebar_span'>Gold</span>
                     </Link>
                     <Link 
                     className="siderbar_menu_link"
-                    to='/gold'>
+                    to='/gold'
+                    onClick={ isCloseMenu }>
                         <IoLogInOutline className="ico_menu"/>
                         <span className='sidebar_span'>Ingresar</span>
                     </Link>
                     <Link 
                     className="siderbar_menu_link"
-                    to='/gold'>
+                    to='/gold'
+                    onClick={ isCloseMenu }>
                         <IoLogOutOutline className="ico_menu"/>
                         <span className='sidebar_span'>Salir</span>
                     </Link>
