@@ -147,7 +147,7 @@ figcaption {
 
 .card_link_card{
   text-decoration: none;
-  color: var(--sexto-color);
+  color: var(--primer-color);
   font-weight: 600;
   font-size: 1.2rem;
   margin-top: 1rem;
